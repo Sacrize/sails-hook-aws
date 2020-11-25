@@ -14,6 +14,7 @@ module.exports = function (sails) {
         },
         initialize() {
             let self = this;
+            sails.log.info('Initializing hook (`sails-hook-aws`)');
             for (let service of Object.keys(AWS)) {
                 if (typeof AWS[service] === 'function') {
                     self[service] = function () {
