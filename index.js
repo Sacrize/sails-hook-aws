@@ -26,9 +26,10 @@ module.exports = function (sails) {
         AWS,
     }
     function _initOnce(self, service) {
-        if (!self['AWS' + service]) {
-            self['AWS' + service] = new AWS[service]();
+        let name = '_' + service;
+        if (!self[name]) {
+            self[name] = new AWS[service]();
         }
-        return self['AWS' + service];
+        return self[name];
     }
 }
