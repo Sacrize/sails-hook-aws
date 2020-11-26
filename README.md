@@ -24,7 +24,7 @@ module.exports.aws = {
     },
 };
 ```
-Config is for [aws-sdk](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html).
+Config is for [aws-sdk](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html#constructor-property).
 
 ## Available methods
 Executing methods with auto initialization:
