@@ -1,4 +1,4 @@
-# Sails Hook Payu
+# Sails Hook AWS
 
 Simple configuration and communication with AWS API in sails.
 
